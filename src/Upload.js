@@ -46,7 +46,7 @@ class Upload extends React.Component {
   };
 
   uploadFile = file => {
-    const url = "http://127.0.0.1/api/v1.0/file-upload";
+    const url = "http://18.136.200.16/api/v1.0/file-upload";
     const formData = new FormData();
     formData.append("file", file);
     const config = {
@@ -58,7 +58,7 @@ class Upload extends React.Component {
   };
 
   getFile = id => {
-    const url = "http://127.0.0.1/api/v1.0/file-upload/" + id;
+    const url = "http://18.136.200.16/api/v1.0/file-upload/" + id;
     return get(url, { responseType: "arraybuffer" });
   };
 
